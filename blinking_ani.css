@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    background-color: rgb(2, 2, 2);
+    text-align: center;
+    color: rgb(36, 34, 34);
+}
+h2{
+    margin-top: 200px;
+    font-size: 16em;
+    transition: 00.50s;
+    cursor: pointer;
+}
+h2 > span{
+    animation: glow ease-in-out 4s infinite;
+}
+h2 span:nth-child(1){
+    /* color: rgb(215, 215, 25); */
+    animation-delay: 0.25s;
+   
+}
+h2 span:nth-child(2){
+    /* color: rgb(215, 215, 25); */
+    animation-delay: 0.50s;
+}
+h2 span:nth-child(3){
+    /* color: rgb(215, 215, 25); */
+    animation-delay: 0.75s;
+}
+h2 span:nth-child(4){
+    /* color: rgb(215, 215, 25); */
+    animation-delay: 1.0s;
+}
+h2 span:nth-child(5){
+    /* color: rgb(215, 215, 25); */
+    animation-delay: 1.25s;
+}
+h2:hover span:nth-child(1)::after
+{
+    margin-left: 10px;
+}
+@keyframes glow
+{
+    0%,100%{
+        color:rgb(255, 0, 166);
+        text-shadow: 0 0 20px white, 0 0 50px rgb(17, 0, 255),0 0 150px blue ;
+    }
+    50%,55%{
+        color: black;
+        text-shadow: none;
+        /* text-shadow: 0 0 20px white, 0 0 50px rgb(17, 0, 255),0 0 150px blue ; */
+    }
+}

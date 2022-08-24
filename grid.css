@@ -1,0 +1,47 @@
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 100px ;
+    gap: 10px;
+
+
+}
+.grid-1
+{
+    background-color: firebrick;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+.grid-2
+{
+    background-color: black;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+.grid-3
+{
+    /* background-color: red; */
+    background: linear-gradient(black,red);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+.grid-4
+{
+    background:linear-gradient(yellow,blue);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+
+}
+.grid-5
+{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    
+}
